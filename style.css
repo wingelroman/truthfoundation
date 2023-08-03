@@ -1,3 +1,7 @@
+@font-face{
+    font-family: mainfont;
+    src: url('./font.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +10,7 @@
     user-select: none;
     font-family: sans-serif;
 }
-@font-face{
-    font-family: mainfont;
-    src: url('./PentaGrams_Malefissent.ttf');
-}
+
 :root{
     --btn-radius: calc(.7vw + .7vh);
 }
