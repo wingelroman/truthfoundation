@@ -1,0 +1,71 @@
+
+<link rel="stylesheet" href="./themes/light.css" type="text/css" media="all" />
+<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+
+<body>
+    <div class="header">
+
+        
+         <div class="menus">
+            
+            <div class="selected">home</div>
+            <div>about</div>
+            <div>contact</div>
+            
+        </div>
+       
+    </div>
+    
+    <div class="body">
+        
+        <div class="home">
+            home
+        </div>
+        
+        <div class="about" hidden>
+            about
+        </div>
+        
+        <div class="contact" hidden>
+            <h1 class="ttl">send us a direct message</h1>
+            
+            <div>
+            <input class="full-name contact-input" placeholder="full name" type="text"/>
+            </div>
+            <div>
+            <input class="email contact-input" placeholder="email address" type="email"/>
+            </div>
+            <div>
+                <textarea class="message" placeholder="type your message here."></textarea>
+            </div>
+            
+            <div class="submit-btn">
+                send message
+            </div>
+            <div class="useless">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+       &copy; 2023, powered by ongoing technology LLC.
+    </div>
+    
+    <script>
+    let scripts = ['vars.js', 'menu-navigation.js'];
+    let active_menus = {
+    current: 0,
+    last: 0
+}
+let header_menus = document.querySelector('.menus');
+    this.onload = () =>{
+    for(let i = 0; i < scripts.length; i++){
+        let e = document.createElement('script');
+        e.setAttribute('src', './'+scripts[i]);
+        document.body.append(e);
+    }
+}
+    </script>
+</body>

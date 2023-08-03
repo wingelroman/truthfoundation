@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+:root{
+    --btn-radius: calc(.7vw + .7vh);
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: var(--header-bg);
+    box-shadow: 0 calc(.1vh) 5px var(--shadow-color);
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    top: 10%;
+    overflow: scroll;
+}
+.logo{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background: black;
+}
+.menus{
+    position: absolute;
+
+    height: 100%;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.menus>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: calc(2vw);
+    padding-inline: calc(1vw);
+    transition: all .5s;
+    cursor: pointer;
+}
+.selected{
+    background: var(--main-color);
+}
+.contact-input{
+    border-bottom: calc(.2vh + .2vw) solid var(--main-color);
+    background: none;
+    font-size: calc(1.5vh + 1.5vw);
+    width: 50%;
+    text-align: center;
+    padding-inline: 1%;
+    padding-block-start: 1%;
+    margin-block: 2%;
+}
+.contact-input:focus{
+    background: var(--input-focus-bg);
+}
+.full-name{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.email{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.message{
+    border-bottom:  calc(.2vh + .2vw) solid var(--main-color);
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background: var(--input-focus-bg);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.submit-btn{
+    position: relative;
+    width: 30%;
+    height: 10%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--btn-radius);
+    box-shadow: 0 calc(.5vh) 5px var(--shadow-color);
+}
+.submit-btn:active{
+    background: none;
+    border: calc(.1vh + .1vw) solid var(--main-color);
+}
+.useless{
+    position: relative;
+    height: 10%;
+    margin-top: 5%;
+}
+.ttl{
+    position: relative;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
