@@ -1,1 +1,6 @@
-
+:root{
+    --main-color: #faaf10;
+    --header-bg: #fafaff;
+    --shadow-color: black;
+    --input-focus-bg: #fafaff;
+}
