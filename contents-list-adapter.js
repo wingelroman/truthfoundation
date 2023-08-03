@@ -22,7 +22,7 @@ function updateList(obj){
             
             let c = document.createElement('div');
             
-            c.setAttribute('class', 'cat ' + obj[i].cat);
+            c.setAttribute('class', 'cat ' + obj[i].cat.split(" ").join("-"));
             
             let t = document.createElement('h1');
             
@@ -37,7 +37,7 @@ function updateList(obj){
             contentsListAdapter.append(c);
             
         } else{
-            document.querySelector('.'+obj[i].cat).append(x);
+            document.querySelector(`.${obj[i].cat.split(" ").join("-")}`).append(x);
         }
         
         //contentsListAdapter.append(x);
