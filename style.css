@@ -20,6 +20,7 @@
     height: 10%;
     background: var(--header-bg);
     box-shadow: 0 calc(.1vh) 5px var(--shadow-color);
+    z-index: 1;
 }
 
 .footer{
@@ -152,15 +153,15 @@
     position: relative;
     width: 40%;
     height: 100%;
-    border: calc(.1vh + .1vw) solid var(--main-color);
-    background: url('./bg.jpg');
-    background-size: fit;
+   /* border: calc(.1vh + .1vw) solid var(--main-color);*/
+    /*background: url('./bg.jpg');*/
+    background: var(--dark-bg);
 }
 .content-view{
     position: relative;
     width: 60%;
     height: 100%;
-    background: url('./heaven.jpg');
+  /*  background: url('./heaven.jpg'); */
     background-size: cover;
     overflow: hidden;
 }
@@ -206,7 +207,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(2vh + 2vw);
+    font-size: calc(1vh + 1vw);
     margin-block: 5%;
     border-bottom: calc(.1vw + .1vh) solid black;
 }
