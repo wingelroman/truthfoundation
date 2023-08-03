@@ -6,6 +6,10 @@
     user-select: none;
     font-family: sans-serif;
 }
+@font-face{
+    font-family: mainfont;
+    src: url('./Pentagrams Malefissent.ttf');
+}
 :root{
     --btn-radius: calc(.7vw + .7vh);
 }
@@ -62,6 +66,7 @@
     padding-inline: calc(1vw);
     transition: all .5s;
     cursor: pointer;
+    font-family: mainfont;
 }
 .selected{
     background: var(--main-color);
@@ -135,7 +140,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: var(--main-color);
+    font-family: mainfont;
 }
 .home{
     position: absolute;
@@ -170,6 +175,7 @@
     border-top: calc(.1vh + .1vw) solid var(--main-color);
     backdrop-filter: blur(5px);
     transition: all .5s;
+    font-family: mainfont;
 }
 .content-t:hover{
     background: var(--main-color-sec);
