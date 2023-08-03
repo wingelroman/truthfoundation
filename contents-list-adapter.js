@@ -26,11 +26,8 @@ try{
         return res.json();
     }).then((data)=>{
         contents = data;
-    })
-    setTimeout(function() {
         updateList(contents);
-    }, 100);
-    //updateList(contents);
+    });
 } catch (err){
     updateList(contents);
 }
