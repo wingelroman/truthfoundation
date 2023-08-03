@@ -4,6 +4,7 @@
     border: none;
     outline: none;
     user-select: none;
+    font-family: sans-serif;
 }
 :root{
     --btn-radius: calc(.7vw + .7vh);
