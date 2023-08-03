@@ -4,5 +4,5 @@
     --shadow-color: black;
     --input-focus-bg: #fafaff;
     --dark-bg: #dddddd;
-    --main-color-sec: #facc00;
+    --main-color-sec: rgba(245,150,0,.2);
 }
