@@ -99,6 +99,7 @@
     transform: translateX(-50%);
 }
 .submit-btn{
+    cursor: pointer;
     position: relative;
     width: 30%;
     height: 10%;
