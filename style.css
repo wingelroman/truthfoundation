@@ -183,14 +183,15 @@
 }
 .content-body-adapter{
     position: absolute;
-    width: 98%;
-    height: 98%;
+    width: 94%;
+    height: 94%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     background: rgba(255,255,255,.8);
     backdrop-filter: blur(10px);
     overflow: auto;
+    padding-inline: 2%;
 }
 .c-n{
     position: absolute;
