@@ -149,7 +149,8 @@
     width: 40%;
     height: 100%;
     border: calc(.1vh + .1vw) solid var(--main-color);
-    background: var(--dark-bg);
+    background: url('./bg.jpg');
+    background-size: fit;
 }
 .content-view{
     position: relative;
