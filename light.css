@@ -1,0 +1,8 @@
+:root{
+    --main-color: #faaf10;
+    --header-bg: #fafaff;
+    --shadow-color: black;
+    --input-focus-bg: #fafaff;
+    --dark-bg: #dddddd;
+    --main-color-sec: rgba(245,150,0,.2);
+}
