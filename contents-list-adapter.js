@@ -5,6 +5,7 @@ function updateList(obj){
         x.setAttribute('class', 'content-t');
         if(i == 0){
             x.setAttribute('class', 'content-t content-t-sel');
+            contentView.innerHTML = obj[i].body;
         }
         contentsListAdapter.append(x);
     }
