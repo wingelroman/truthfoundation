@@ -112,6 +112,7 @@
     transform: translateX(-50%);
     border-radius: var(--btn-radius);
     box-shadow: 0 calc(.5vh) 5px var(--shadow-color);
+    color: white;
 }
 .submit-btn:active{
     background: none;
