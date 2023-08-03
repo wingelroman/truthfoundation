@@ -156,6 +156,9 @@
     position: relative;
     width: 60%;
     height: 100%;
+    background: url('./heaven.jpg');
+    background-size: cover;
+    overflow: hidden;
 }
 .content-t{
     cursor: pointer;
@@ -165,10 +168,22 @@
     align-items: center;
     padding: 2%;
     border-top: calc(.1vh + .1vw) solid var(--main-color);
+    backdrop-filter: blur(5px);
+    transition: all .5s;
 }
 .content-t:hover{
     background: var(--main-color-sec);
 }
 .content-t-sel{
     background: var(--main-color);
+}
+.content-body-adapter{
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(10px);
 }
