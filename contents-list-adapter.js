@@ -8,6 +8,9 @@ function updateList(obj){
             contentView.innerHTML = obj[i].body;
         }
         contentsListAdapter.append(x);
+        x.onclick = () =>{
+            contentView.innerHTML = obj[i].body;
+        }
     }
 }
 try{
