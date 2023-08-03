@@ -202,3 +202,11 @@
     transform: translateY(-50%);
     border-block: calc(.1vh + .1vw) solid var(--main-color);
 }
+.cat-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(2vh + 2vw);
+    margin-block: 5%;
+    border-bottom: calc(.1vw + .1vh) solid black;
+}

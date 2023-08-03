@@ -13,7 +13,35 @@ function updateList(obj){
             x.setAttribute('class', 'content-t content-t-sel');
             contentView.innerHTML = obj[i].body;
         }
-        contentsListAdapter.append(x);
+        
+        
+        if(!cats.includes(obj[i].cat)){
+            
+            
+            cats.push(obj[i].cat);
+            
+            let c = document.createElement('div');
+            
+            c.setAttribute('class', 'cat ' + obj[i].cat);
+            
+            let t = document.createElement('h1');
+            
+            t.setAttribute('class', 'cat-name');
+            
+            t.innerHTML = obj[i].cat;
+            
+            c.append(t);
+            
+            c.append(x);
+            
+            contentsListAdapter.append(c);
+            
+        } else{
+            document.querySelector('.'+obj[i].cat).append(x);
+        }
+        
+        //contentsListAdapter.append(x);
+
         x.onclick = () =>{
             contentView.innerHTML = obj[i].body;
         }
