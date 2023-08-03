@@ -44,6 +44,7 @@ function updateList(obj){
 
         x.onclick = () =>{
             contentView.innerHTML = obj[i].body;
+            contentView.scrollTo(0,0);
         }
     }
 }
