@@ -4,7 +4,9 @@
 
 <body>
     <div class="header">
-
+        
+        <div class="logo">
+        </div>
         
          <div class="menus">
             
@@ -19,7 +21,11 @@
     <div class="body">
         
         <div class="home">
-            home
+            <div class="contents-list">
+                
+            </div>
+            <div class="content-view">
+            </div>
         </div>
         
         <div class="about" hidden>
@@ -54,12 +60,35 @@
     </div>
     
     <script>
-    let scripts = ['menu-navigation.js'];
+    let scripts = ['menu-navigation.js', 'contents-list-adapter.js'];
     let active_menus = {
     current: 0,
     last: 0
 }
+let contents = [{
+    title: "content 1 title",
+    body: "content\'s body"
+}, 
+{
+    
+    title: "content 2 title",
+    body: "content\'s body"
+
+},
+{
+    
+    title: "content 3 title",
+    body: "content\'s body"
+
+}, {
+    
+    title: "content 4 title",
+    body: "content\'s body"
+
+}];
 let header_menus = document.querySelector('.menus');
+let contentsListAdapter = document.querySelector('.contents-list');
+let contentView = document.querySelector('.content-view');
     this.onload = () =>{
     for(let i = 0; i < scripts.length; i++){
         let e = document.createElement('script');

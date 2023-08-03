@@ -36,10 +36,14 @@
     overflow: scroll;
 }
 .logo{
-    position: relative;
-    width: 10%;
-    height: 100%;
-    background: black;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    background: url('./logo.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 2%;
 }
 .menus{
     position: absolute;
@@ -132,4 +136,38 @@
     transform: translateX(-50%);
     text-align: center;
     color: var(--main-color);
+}
+.home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.contents-list{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border: calc(.1vh + .1vw) solid var(--main-color);
+    background: var(--dark-bg);
+}
+.content-view{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+.content-t{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border-top: calc(.1vh + .1vw) solid var(--main-color);
+}
+.content-t:hover{
+    background: var(--main-color-sec);
+}
+.content-t-sel{
+    background: var(--main-color);
 }
