@@ -1,4 +1,10 @@
+let contents_log = {
+    current: 0,
+    last: 0
+}
+
 function updateList(obj){
+    
     for(let i = 0; i < obj.length; i++){
         let x = document.createElement('div');
         x.innerHTML = obj[i].title;
@@ -14,7 +20,17 @@ function updateList(obj){
     }
 }
 try{
-    updateList(contents);
+    fetch('./contents.json',{
+        method: 'GET'
+    }).then((res)=>{
+        return res.json();
+    }).then((data)=>{
+        contents = data;
+    })
+    setTimeout(function() {
+        updateList(contents);
+    }, 100);
+    //updateList(contents);
 } catch (err){
     updateList(contents);
 }
