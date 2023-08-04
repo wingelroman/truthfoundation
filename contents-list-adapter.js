@@ -41,10 +41,17 @@ function updateList(obj){
         }
         
         //contentsListAdapter.append(x);
+        
+        x.setAttribute('pos', obj.indexOf(obj[i]))
 
-        x.onclick = () =>{
+        x.onclick = (e) =>{
+            contents_log.last = contents_log.current;
+            contents_log.current = parseInt(x.getAttribute('pos'));
+            console.log(contents_log.current,contents_log.last);
             contentView.innerHTML = obj[i].body;
             contentView.scrollTo(0,0);
+            document.querySelector('[pos="'+contents_log.current+'"]').setAttribute('class', 'content-t content-t-sel');
+            document.querySelector('[pos="'+contents_log.last+'"]').setAttribute('class', 'content-t');
         }
     }
 }
