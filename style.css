@@ -203,13 +203,15 @@
     box-shadow: 0 calc(.1vh) 5px var(--shadow-color);
     left: 50%;
     transform: translateX(-50%);
-    transition: all .8s;
+  transition: all .5s;
 }
+
 .pic:hover{
     transform-origin: center;
     transform: rotate(5deg);
     left: 20%;
 }
+
 .lst-itm{
     cursor: pointer;
     position: relative;
