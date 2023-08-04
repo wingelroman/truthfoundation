@@ -40,14 +40,12 @@ function updateList(obj){
             document.querySelector(`.${obj[i].cat.split(" ").join("-")}`).append(x);
         }
         
-        //contentsListAdapter.append(x);
         
         x.setAttribute('pos', obj.indexOf(obj[i]))
 
         x.onclick = (e) =>{
             contents_log.last = contents_log.current;
             contents_log.current = parseInt(x.getAttribute('pos'));
-            console.log(contents_log.current,contents_log.last);
             contentView.innerHTML = obj[i].body;
             contentView.scrollTo(0,0);
             document.querySelector('[pos="'+contents_log.current+'"]').setAttribute('class', 'content-t content-t-sel');

@@ -178,10 +178,24 @@
 
 .disp{
     position: absolute;
-    width: 60%;
+    width: 56%;
     height: 100%;
     left: 40%;
-    overflow: hidden;
+    overflow: auto;
+    padding-inline: 2%;
+}
+.qiu-pro{
+    height: calc(10vh + 10vw);
+    border-radius: 999px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    box-shadow: 0 calc(.1vh) 5px var(--shadow-color);
+}
+.qiu-name{
+    text-align: center;
+    margin-top: 3%;
 }
 
 .lst-itm{
