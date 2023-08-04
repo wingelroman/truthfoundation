@@ -168,6 +168,7 @@
    /* border: calc(.1vh + .1vw) solid var(--main-color);*/
     /*background: url('./bg.jpg');*/
     background: var(--dark-bg);
+    overflow: auto;
 }
 .tb{
     position: absolute;
