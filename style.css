@@ -207,14 +207,15 @@
     left: 50%;
     transform: translateX(-50%);
   transition: all .5s;
+  height: 100%;
 }
-
+/*
 .pic:hover{
     transform-origin: center;
-    transform: rotate(5deg);
+    transform: rotate(1.5deg);
     left: 20%;
 }
-
+*/
 .lst-itm{
     cursor: pointer;
     position: relative;
