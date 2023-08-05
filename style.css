@@ -291,10 +291,7 @@
     margin-block: 5%;
     border-bottom: calc(.1vw + .1vh) solid black;
     text-align: center;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 100%;
+    
 }
 .cat{
     position: relative;
