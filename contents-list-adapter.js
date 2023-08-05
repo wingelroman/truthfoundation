@@ -22,7 +22,7 @@ function updateList(obj){
             
             let c = document.createElement('div');
             
-            c.setAttribute('class', 'cat ' + obj[i].cat.split(" ").join("-"));
+            c.setAttribute('class', 'cat ' + obj[i].cat.split(" ").join("").split("'").join(""));
             
             let t = document.createElement('h1');
             
@@ -36,8 +36,12 @@ function updateList(obj){
             
             contentsListAdapter.append(c);
             
+            c.onclick = () =>{
+                c.setAttribute('class', '');
+            }
+            
         } else{
-            document.querySelector(`.${obj[i].cat.split(" ").join("-")}`).append(x);
+            document.querySelector(`.${obj[i].cat.split(" ").join("").split("'").join("")}`).append(x);
         }
         
         
