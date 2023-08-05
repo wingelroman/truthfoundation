@@ -289,12 +289,11 @@
     background: rgba(255,255,255,.5);
     height: auto;
     overflow: hidden;
-    transition: all 2s;
 }
 .acc{
     position: relative;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,1);
     height: calc(3vh + 3vw);
     overflow: hidden;
-    transition: all 2s;
+    transition: all .5s;
 }
