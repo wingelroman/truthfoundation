@@ -163,7 +163,7 @@
 }
 .contents-list{
     position: relative;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background: url('./bg.jpg');
     background-position: center;
@@ -172,16 +172,18 @@
 }
 .tb{
     position: absolute;
-    width: 40%;
+    width: 30%;
     height: 100%;
-    background: var(--dark-bg);
+    background: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .disp{
     position: absolute;
-    width: 56%;
+    width: 66%;
     height: 100%;
-    left: 40%;
+    left: 30%;
     overflow: auto;
     padding-inline: 2%;
 }
@@ -231,7 +233,7 @@
 
 .content-view{
     position: relative;
-    width: 60%;
+    width: 70%;
     height: 100%;
   /*  background: url('./heaven.jpg'); */
     overflow: hidden;
@@ -285,6 +287,14 @@
 .cat{
     position: relative;
     background: rgba(255,255,255,.5);
+    height: auto;
+    overflow: hidden;
+    transition: all 2s;
+}
+.acc{
+    position: relative;
+    background: rgba(255,255,255,.5);
     height: calc(3vh + 3vw);
     overflow: hidden;
+    transition: all 2s;
 }
