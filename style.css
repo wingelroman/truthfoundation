@@ -290,8 +290,11 @@
     align-items: center;
     font-size: calc(.5vh + .5vw);
     margin-block: 5%;
-    border-bottom: calc(.1vw + .1vh) solid black;
+    border-bottom: calc(.1vw + .1vh) solid var(--main-color);
     text-align: center;
+    background: black;
+    color: white;
+    cursor: pointer;
     
 }
 .cat{
@@ -302,7 +305,6 @@
 }
 .acc{
     position: relative;
-    background: rgba(255,255,255,1);
     height: calc(3vh + 3vw);
     overflow: hidden;
     transition: all .5s;
