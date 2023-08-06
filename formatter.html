@@ -1,0 +1,9 @@
+<textarea id="tar" name="" id= rows="40" cols="40" style="height:50%;position:relative"></textarea>
+<button id="deletebtn" type="submit">format</button>
+
+<script type="text/javascript" charset="utf-8">
+    document.querySelector('#deletebtn').onclick = () =>{
+        let ar = document.querySelector('#tar');
+        ar.value = ar.value.replace(/\\/g, '\\\\').replace(/"/g,'\\"').split('\n').join("").split('\r').join("").split('\b').join("").split('\t').join("").split('\n').join("");
+    }
+</script>
