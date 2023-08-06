@@ -26,11 +26,11 @@ function updateList(obj){
             let c = document.createElement('div');
             
             if(i == 0){
-            c.setAttribute('class', 'cat ' + obj[i].cat.split(" ").join("").split("'").join("").split(",").join(""));
-            cats_log.current = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("");
-            cats_log.last = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("");
+            c.setAttribute('class', 'cat ' + obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join(""));
+            cats_log.current = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join("");
+            cats_log.last = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join("");
             } else{
-                c.setAttribute('class', 'cat acc ' + obj[i].cat.split(" ").join("").split("'").join("").split(",").join(""));
+                c.setAttribute('class', 'cat acc ' + obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join(""));
             }
             
             let t = document.createElement('h1');
@@ -47,14 +47,14 @@ function updateList(obj){
             
             c.onclick = () =>{
                 cats_log.last = cats_log.current;
-                cats_log.current = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("");
+                cats_log.current = obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join("");
                 
                 document.querySelector('.'+cats_log.last).classList.add("acc");
                 document.querySelector('.'+cats_log.current).classList.remove("acc");
             }
             
         } else{
-            document.querySelector(`.${obj[i].cat.split(" ").join("").split("'").join("").split(",").join("")}`).append(x);
+            document.querySelector(`.${obj[i].cat.split(" ").join("").split("'").join("").split(",").join("").split("&").join("")}`).append(x);
         }
         
         
