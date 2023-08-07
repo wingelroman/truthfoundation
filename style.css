@@ -11,7 +11,7 @@
     font-family: sans-serif;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1vw;
 }
 ::-webkit-scrollbar-thumb{
     background: var(--main-color-sec-2);
@@ -38,19 +38,21 @@
 .footer{
     position: absolute;
     width: 100%;
-    height: 5%;
+    height: 3%;
     background: black;
     bottom: 0;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: calc(.5vw + .5vh);
 }
 .body{
     position: absolute;
     width: 100%;
     height: 85%;
-    top: 10%;
+    /*top: 10%;*/
+    bottom: 3%;
     overflow: scroll;
 }
 .logo{
@@ -66,20 +68,23 @@
 .menus{
     position: absolute;
 
-    height: 100%;
+    height: 50%;
     display: flex;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    left: .2%;
+    bottom: 0;
+    transform: translate(.2%,0);
 }
 .menus>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline: calc(2vw);
+    margin-inline: calc(1vw);
     padding-inline: calc(1vw);
     transition: all .5s;
     cursor: pointer;
+    font-size: calc(1vw + 1vh);
+    border-top-left-radius: calc(1vw + 1vh);
+    border-top-right-radius: calc(1vw + 1vh);
 }
 .selected{
     background: var(--main-color);
@@ -172,7 +177,7 @@
 }
 .tb{
     position: absolute;
-    width: 30%;
+    width: 20%;
     height: 100%;
     background: url('./bg.jpg');
     background-position: center;
@@ -181,10 +186,11 @@
 
 .disp{
     position: absolute;
-    width: 66%;
+    width: 76%;
     height: 100%;
-    left: 30%;
+    left: 20%;
     overflow: auto;
+    font-size: calc(.7vw + .7vh);
     padding-inline: 2%;
 }
 .qiu-pro{
@@ -230,6 +236,9 @@
 }
 
 .lst-itm:hover{
+    background: var(--main-color-sec);
+}
+.menus>div:hover{
     background: var(--main-color-sec);
 }
 
