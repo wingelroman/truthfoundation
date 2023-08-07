@@ -292,7 +292,7 @@
     margin-block: 5%;
     border-bottom: calc(.1vw + .1vh) solid var(--main-color);
     text-align: center;
-    background: black;
+    background: blue;
     color: white;
     cursor: pointer;
     
@@ -308,4 +308,7 @@
     height: calc(3vh + 3vw);
     overflow: hidden;
     transition: all .5s;
+}
+.center{
+    text-align: center;
 }
