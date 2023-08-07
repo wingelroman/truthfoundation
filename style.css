@@ -57,12 +57,11 @@
 }
 .logo{
     position: absolute;
-    width: 10vh;
-    height: 10vh;
-    background: url('./logo.png');
-    background-size: 150%;
+    height: 100%;
+    /*background: url('./logo.png');
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     right: 2%;
 }
 .menus{
