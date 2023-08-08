@@ -95,12 +95,12 @@ table{
 .contact-input{
     border-bottom: calc(.2vh + .2vw) solid var(--main-color);
     background: none;
-    font-size: calc(1.5vh + 1.5vw);
-    width: 50%;
+    font-size: calc(1vh + 1vw);
+    width: 30%;
     text-align: center;
     padding-inline: 1%;
-    padding-block-start: 1%;
-    margin-block: 2%;
+    padding-block-start: .5%;
+    margin-block: 1%;
 }
 .contact-input:focus{
     background: var(--input-focus-bg);
@@ -116,15 +116,15 @@ table{
     transform: translateX(-50%);
 }
 .contact{
-    position: absolute;
+   /* position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
 }
 .message{
     border-bottom:  calc(.2vh + .2vw) solid var(--main-color);
     position: relative;
     width: 50%;
-    height: 50%;
+    height: 40%;
     background: var(--input-focus-bg);
     left: 50%;
     transform: translateX(-50%);
@@ -154,12 +154,11 @@ table{
     position: relative;
     height: 10%;
     margin-top: 5%;
+    width: 5%;
 }
 .ttl{
     position: relative;
     margin-top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
 }
 .home{
@@ -189,7 +188,7 @@ table{
 
 .disp{
     position: absolute;
-    width: 76%;
+    width: 75%;
     height: 100%;
     left: 20%;
     overflow: auto;

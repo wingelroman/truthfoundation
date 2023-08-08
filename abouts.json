@@ -10,7 +10,7 @@
     },
     {
         "title":"contact",
-        "body":"        <div class=\"contact\">            <h1 class=\"ttl\">send us a direct message</h1>                        <div>            <input class=\"full-name contact-input\" placeholder=\"full name\" type=\"text\"/>            </div>            <div>            <input class=\"email contact-input\" placeholder=\"email address\" type=\"email\"/>            </div>            <div>                <textarea class=\"message\" placeholder=\"type your message here.\"></textarea>            </div>                        <div class=\"submit-btn\">                send message            </div>            <div class=\"useless\">                            </div>        </div>"
+        "body":"   <div>     <div class=\"contact\">            <h1 class=\"ttl\">send us a direct message</h1>                        <div>            <input class=\"full-name contact-input\" placeholder=\"full name\" type=\"text\"/>            </div>            <div>            <input class=\"email contact-input\" placeholder=\"email address\" type=\"email\"/>            </div>            <div>                <textarea class=\"message\" placeholder=\"type your message here.\"></textarea>            </div>                        <div class=\"submit-btn\">                send message            </div>            <div hidden class=\"useless\">                            </div>        </div></div>"
     }
     
     
