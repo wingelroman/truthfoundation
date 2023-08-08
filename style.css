@@ -10,8 +10,12 @@
     user-select: none;
     font-family: sans-serif;
 }
+table{
+    font-size: calc(.5vw + .5vh);
+}
 ::-webkit-scrollbar {
-    width: 1vw;
+    position: relative;
+    width: .5vw;
 }
 ::-webkit-scrollbar-thumb{
     background: var(--main-color-sec-2);
@@ -29,7 +33,7 @@
 .header{
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 11%;
     background: var(--header-bg);
     box-shadow: 0 calc(.1vh) 5px var(--shadow-color);
     z-index: 1;
@@ -288,7 +292,7 @@
     position: absolute;
     left: 50%;
     /*font-family: mainfont;*/
-    font-size: calc(2vw + 2vh);
+    font-size: calc(1.3vw + 1.3vh);
     top: 50%;
     transform: translate(-50%,-50%);
     border-block: calc(.1vh + .1vw) solid var(--main-color);
